@@ -12,7 +12,7 @@
 1. **動物實例輪廓分割 (Animal Instance Segmentation)**：由 YOLO 模型隔離出畫面中每隻動物的專屬多邊形遮罩。
 2. **獨立眼部輪廓分割 (Eye Segmentation)**：提供 **傳統電腦視覺演算法 (`TraditionalEyeSegmenter`)** 與 **ViTPose 跨物種姿態估計 (`ViTPoseEyeSegmenter`)** 兩種獨立 Class，個別精確框出每隻動物的左眼與右眼輪廓。
 3. **單一動物雙眼距離量測 ($D_{\text{intra}}$)**：以影像空間矩 (Image Moments) 提取質心，計算瞳距。
-4. **任意兩隻動物右眼距離量測 ($D_{\text{inter\_R}}$)**：自動窮舉畫面中所有動物配對，計算跨動物空間右眼幾何距離。
+4. **任意兩隻動物右眼距離量測 ($D_{\text{inter-R}}$)**：自動窮舉畫面中所有動物配對，計算跨動物空間右眼幾何距離。
 5. **完整軟體工程交付**：包含 FastAPI RESTful API、Swagger 文件、JWT 測試帳號認證、Docker 部署、CSV 匯出與 Ground Truth 誤差評估報告。
 
 ---
@@ -35,23 +35,23 @@
 ```mermaid
 flowchart TD
     subgraph InputLayer["1. 影像輸入層 (COCO Dataset / User Upload)"]
-        RawImg["COCO 2017 影像\n(>= 2 隻動物, 如雙貓 #555705)"]
+        RawImg["COCO 2017 影像<br/>(2 隻以上動物，如雙貓 #555705)"]
     end
 
     subgraph SegmentationLayer["2. YOLO 實例分割與輪廓隔離 (Animal Instance Segmentation)"]
         YoloSeg["YOLOv8-seg (yolov8n-seg.pt)"]
         RawImg --> YoloSeg
-        YoloSeg --> Split["輪廓分離模組\n(依 Mask 隔離每隻動物獨立 ROI)"]
+        YoloSeg --> Split["輪廓分離模組<br/>(依 Mask 隔離每隻動物獨立 ROI)"]
         Split --> Animal1["動物 #1 隔離 Mask & ROI"]
         Split --> Animal2["動物 #2 隔離 Mask & ROI"]
     end
 
     subgraph EyeLayer["3. 雙演算法眼睛辨識與分割 (Eye Segmentation Class)"]
         subgraph Method1["Class 1: TraditionalEyeSegmenter"]
-            TradMethod["灰階與高斯平滑\n+ 自適應局部二值化 (Adaptive Threshold)\n+ 輪廓圓度與面積過濾\n+ 雙側幾何對稱配對 (Pair Matching)"]
+            TradMethod["灰階與高斯平滑<br/>+ 自適應局部二值化<br/>+ 輪廓圓度與面積過濾<br/>+ 雙側幾何對稱配對"]
         end
         subgraph Method2["Class 2: ViTPoseEyeSegmenter"]
-            PoseMethod["ViTPose (vitpose-s-ap10k.onnx)\n跨54種動物姿態關鍵點估計 (Kpt 0: 左眼, Kpt 1: 右眼)\n+ 局域次像素空間矩細化"]
+            PoseMethod["ViTPose (vitpose-s-ap10k.onnx)<br/>跨 54 種動物姿態關鍵點估計 (Kpt 0 / 1)<br/>+ 局域次像素空間矩細化"]
         end
         Animal1 --> TradMethod
         Animal1 --> PoseMethod
@@ -60,11 +60,11 @@ flowchart TD
     end
 
     subgraph MetrologyLayer["4. 空間測量學核心 (Metrology & Image Moments)"]
-        Moments["影像一階空間矩質心提取\n(cx, cy) = (M10/M00, M01/M00)"]
+        Moments["影像一階空間矩質心提取<br/>(cx, cy) = (M10/M00, M01/M00)"]
         TradMethod --> Moments
         PoseMethod --> Moments
-        Intra["單隻動物雙眼距離 (Intra-pupillary Distance)\nD_intra = sqrt((xL - xR)^2 + (yL - yR)^2)"]
-        Inter["跨動物右眼距離 (Inter-animal Right-Eye Distance)\nD_inter_R = sqrt((xR1 - xR2)^2 + (yR1 - yR2)^2)"]
+        Intra["單隻動物雙眼距離 (Intra-pupillary Distance)<br/>D_intra = sqrt((xL - xR)^2 + (yL - yR)^2)"]
+        Inter["跨動物右眼距離 (Inter-animal Right-Eye Distance)<br/>D_inter_R = sqrt((xR1 - xR2)^2 + (yR1 - yR2)^2)"]
         Moments --> Intra
         Moments --> Inter
     end
@@ -85,10 +85,9 @@ flowchart TD
 
 ### 2.1 為什麼選擇 YOLOv8-seg 與 ViTPose (AP-10K)？
 1. **單階段端到端推論速度 (Real-time Inference)**：
-   採用 YOLOv8-seg 進行動物個體遮罩分割（< 70ms on CPU, < 15ms on GPU），結合專為 54 種動物物種微調的 ViTPose AP-10K 輕量化神經網絡（ONNX Runtime 加速），
-   原先有此用yolo pose 但是對於動物來說效果很差。
+   採用 YOLOv8-seg 進行動物個體遮罩分割（< 70ms on CPU, < 15ms on GPU），結合專為 54 種動物物種微調的 ViTPose AP-10K 輕量化神經網絡（ONNX Runtime 加速），兼顧即時性與高精確度。
 2. **跨物種通用性 (Universal 54-Species Keypoints)**：
-   傳統人臉姿態模型在貓、狗、熊等動物臉部易發生漂移；ViTPose AP-10K 專門學習動物五官生理先驗，在各種複雜姿態與斑紋下皆能高置信度鎖定左右眼，比起yolo pose有相對多物種的訓練。
+   傳統通用人臉/人體姿態模型（如通用 YOLO-Pose）在動物臉部容易產生漂移或失效；ViTPose AP-10K 具備涵蓋 54 種動物的生理特徵先驗，在複雜毛皮斑紋與視角變化下皆能高置信度鎖定左右眼。
 3. **幾何多邊形與空間矩融合 (Moments & Polygons)**：
    結合神經網路關鍵點預測與局部二值化空間影像矩（Spatial Image Moments），消除整數像素離散化誤差，達成精密次像素（Sub-pixel）瞳距量測。
 
@@ -96,14 +95,17 @@ flowchart TD
 
 #### (1) 交併比 (IoU - Intersection over Union)
 衡量模型預測分割遮罩 $M_{\text{pred}}$ 與真實標註 $M_{\text{gt}}$ 的重疊程度：
+
 $$\text{IoU} = \frac{|M_{\text{pred}} \cap M_{\text{gt}}|}{|M_{\text{pred}} \cup M_{\text{gt}}|}$$
 
 #### (2) 平均精確度 (mAP - mean Average Precision)
 針對不同 IoU 閾值（如 0.50 到 0.95），計算各類別 Precision-Recall 曲線下面積：
+
 $$\text{AP} = \int_{0}^{1} P(R) \, dR, \quad \text{mAP} = \frac{1}{|C|} \sum_{c \in C} \text{AP}_c$$
 
-#### (3) F1-Score
+#### (3) F1-Score (Dice 係數)
 針對像素級分割的重疊指標：
+
 $$\text{Dice} = \frac{2 |M_{\text{pred}} \cap M_{\text{gt}}|}{|M_{\text{pred}}| + |M_{\text{gt}}|}$$
 
 ---
@@ -112,31 +114,46 @@ $$\text{Dice} = \frac{2 |M_{\text{pred}} \cap M_{\text{gt}}|}{|M_{\text{pred}}| 
 
 ### 3.1 眼睛幾何質心提取 (Centroid via Image Moments)
 為了克服單純像素網格離散化帶來的量化誤差，本系統採用**空間影像矩 (Spatial Image Moments)** 計算幾何質心 $(\bar{x}, \bar{y})$：
+
 $$M_{ij} = \sum_{x} \sum_{y} x^i y^j I(x, y)$$
+
 $$\bar{x} = \frac{M_{10}}{M_{00}}, \quad \bar{y} = \frac{M_{01}}{M_{00}}$$
+
 其中 $I(x, y) \in \{0, 1\}$ 為眼睛的二值分割遮罩。
 
 ### 3.2 距離量測公式
 設動物 $k$ 測得的左眼質心為 $P_L^{(k)} = (\bar{x}_L^{(k)}, \bar{y}_L^{(k)})$，右眼質心為 $P_R^{(k)} = (\bar{x}_R^{(k)}, \bar{y}_R^{(k)})$：
 
 #### (1) 每隻動物雙眼距離 (Intra-pupillary Distance, $D_{\text{intra}}$)
-$$D_{\text{intra}}^{(k)} = \sqrt{\left(\bar{x}_L^{(k)} - \bar{x}_R^{(k)}\right)^2 + \left(\bar{y}_L^{(k)} - \bar{y}_R^{(k)}\right)^2}$$
-若提供物理比例因子 $\alpha$ ($\text{mm/pixel}$)，則真實世界物理距離為：
-$$D_{\text{intra, mm}}^{(k)} = D_{\text{intra}}^{(k)} \times \alpha$$
 
-#### (2) 任意兩隻動物 $i, j$ 的右眼距離 (Inter-animal Right-Eye Distance, $D_{\text{inter\_R}}$)
-$$D_{\text{inter\_R}}^{(i, j)} = \sqrt{\left(\bar{x}_R^{(i)} - \bar{x}_R^{(j)}\right)^2 + \left(\bar{y}_R^{(i)} - \bar{y}_R^{(j)}\right)^2}$$
+$$D_{\text{intra}}^{(k)} = \sqrt{\left(\bar{x}_L^{(k)} - \bar{x}_R^{(k)}\right)^2 + \left(\bar{y}_L^{(k)} - \bar{y}_R^{(k)}\right)^2}$$
+
+若提供物理比例因子 $\alpha$ ($\text{mm/pixel}$)，則真實世界物理距離為：
+
+$$D_{\text{intra-mm}}^{(k)} = D_{\text{intra}}^{(k)} \times \alpha$$
+
+#### (2) 任意兩隻動物 $i, j$ 的右眼距離 (Inter-animal Right-Eye Distance, $D_{\text{inter-R}}$)
+
+$$D_{\text{inter-R}}^{(i, j)} = \sqrt{\left(\bar{x}_R^{(i)} - \bar{x}_R^{(j)}\right)^2 + \left(\bar{y}_R^{(i)} - \bar{y}_R^{(j)}\right)^2}$$
 
 ### 3.3 測量學驗證方法 (Verification Methodology)
 本專案建立基準標註庫（Ground Truth Benchmark），透過以下 3 項統計指標進行量化驗證：
+
 1. **平均絕對誤差 (MAE - Mean Absolute Error)**：
-   $$\text{MAE} = \frac{1}{N} \sum_{k=1}^N \left| \hat{D}_k - D_k^{\text{GT}} \right|$$
+
+$$\text{MAE} = \frac{1}{N} \sum_{k=1}^N \left| \hat{D}_k - D_k^{\text{GT}} \right|$$
+
 2. **均方根誤差 (RMSE - Root Mean Squared Error)**：
-   $$\text{RMSE} = \sqrt{\frac{1}{N} \sum_{k=1}^N \left( \hat{D}_k - D_k^{\text{GT}} \right)^2}$$
+
+$$\text{RMSE} = \sqrt{\frac{1}{N} \sum_{k=1}^N \left( \hat{D}_k - D_k^{\text{GT}} \right)^2}$$
+
 3. **平均絕對百分比誤差 (MAPE - Mean Absolute Percentage Error)**：
-   $$\text{MAPE} = \frac{1}{N} \sum_{k=1}^N \frac{\left| \hat{D}_k - D_k^{\text{GT}} \right|}{D_k^{\text{GT}}} \times 100\%$$
+
+$$\text{MAPE} = \frac{1}{N} \sum_{k=1}^N \frac{\left| \hat{D}_k - D_k^{\text{GT}} \right|}{D_k^{\text{GT}}} \times 100\%$$
+
 4. **測量準確率 (Accuracy Rate)**：
-   $$\text{Accuracy} = 100\% - \text{MAPE}$$
+
+$$\text{Accuracy} = 100\% - \text{MAPE}$$
 
 ---
 
@@ -180,7 +197,7 @@ $$D_{\text{inter\_R}}^{(i, j)} = \sqrt{\left(\bar{x}_R^{(i)} - \bar{x}_R^{(j)}\r
 ```bash
 # 1. 複製專案庫
 git clone https://github.com/bobo295246/animal-visual-metrology-.git
-cd coco-animal-metrology
+cd animal-visual-metrology-
 
 # 2. 建立虛擬環境
 python -m venv .venv
@@ -281,4 +298,3 @@ image_name,eye_method,animal_id,species,confidence,bbox_x1,bbox_y1,bbox_x2,bbox_
 coco_000000555705_two_cats_shoes.jpg,vitpose,1,cat,0.854,3,52,331,305,246.62,142.07,299.16,160.24,55.59,13.9,A1-A2:101.28px
 coco_000000555705_two_cats_shoes.jpg,vitpose,2,cat,0.8852,313,21,638,314,348.85,137.88,398.67,141.4,49.94,12.48,A1-A2:101.28px
 ```
-
