@@ -1,0 +1,1141 @@
+[
+  {
+    "file_name": "coco_000000020247_two_bears.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\coco_000000020247_two_bears.jpg",
+    "animals": [
+      "bear",
+      "bear"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "coco_000000039769_two_cats_couch.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\coco_000000039769_two_cats_couch.jpg",
+    "animals": [
+      "cat",
+      "cat"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "coco_000000117374_two_cats_tree.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\coco_000000117374_two_cats_tree.jpg",
+    "animals": [
+      "cat",
+      "bird"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "coco_000000236784_two_dogs_couch.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\coco_000000236784_two_dogs_couch.jpg",
+    "animals": [
+      "dog",
+      "dog",
+      "cat"
+    ],
+    "animal_count": 3
+  },
+  {
+    "file_name": "coco_000000387383_three_cats.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\coco_000000387383_three_cats.jpg",
+    "animals": [
+      "cat",
+      "cat",
+      "cat"
+    ],
+    "animal_count": 3
+  },
+  {
+    "file_name": "coco_000000401991_two_dogs_bed.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\coco_000000401991_two_dogs_bed.jpg",
+    "animals": [
+      "dog",
+      "dog",
+      "cat",
+      "dog",
+      "dog"
+    ],
+    "animal_count": 5
+  },
+  {
+    "file_name": "coco_000000555705_two_cats_shoes.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\coco_000000555705_two_cats_shoes.jpg",
+    "animals": [
+      "cat",
+      "cat"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000123585.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000123585.jpg",
+    "animals": [
+      "bird",
+      "bird",
+      "bird"
+    ],
+    "animal_count": 3
+  },
+  {
+    "file_name": "000000402473.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000402473.jpg",
+    "animals": [
+      "cat",
+      "cat"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000017178.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000017178.jpg",
+    "animals": [
+      "horse",
+      "horse",
+      "horse"
+    ],
+    "animal_count": 3
+  },
+  {
+    "file_name": "000000261888.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000261888.jpg",
+    "animals": [
+      "cow",
+      "cow"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000234807.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000234807.jpg",
+    "animals": [
+      "horse",
+      "cow",
+      "cow"
+    ],
+    "animal_count": 3
+  },
+  {
+    "file_name": "000000507975.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000507975.jpg",
+    "animals": [
+      "horse",
+      "horse",
+      "horse"
+    ],
+    "animal_count": 3
+  },
+  {
+    "file_name": "000000338304.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000338304.jpg",
+    "animals": [
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000206135.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000206135.jpg",
+    "animals": [
+      "cow",
+      "cow",
+      "cow",
+      "cow"
+    ],
+    "animal_count": 4
+  },
+  {
+    "file_name": "000000173799.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000173799.jpg",
+    "animals": [
+      "elephant",
+      "elephant",
+      "elephant",
+      "elephant",
+      "elephant",
+      "elephant",
+      "elephant",
+      "elephant",
+      "elephant",
+      "elephant",
+      "elephant",
+      "elephant",
+      "elephant",
+      "elephant",
+      "elephant",
+      "elephant",
+      "elephant"
+    ],
+    "animal_count": 17
+  },
+  {
+    "file_name": "000000129756.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000129756.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "cow",
+      "sheep"
+    ],
+    "animal_count": 9
+  },
+  {
+    "file_name": "000000209613.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000209613.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "dog"
+    ],
+    "animal_count": 8
+  },
+  {
+    "file_name": "000000432553.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000432553.jpg",
+    "animals": [
+      "dog",
+      "dog"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000225184.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000225184.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 4
+  },
+  {
+    "file_name": "000000372819.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000372819.jpg",
+    "animals": [
+      "dog",
+      "dog",
+      "dog",
+      "dog"
+    ],
+    "animal_count": 4
+  },
+  {
+    "file_name": "000000245513.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000245513.jpg",
+    "animals": [
+      "giraffe",
+      "bird"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000289393.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000289393.jpg",
+    "animals": [
+      "dog",
+      "giraffe",
+      "dog"
+    ],
+    "animal_count": 3
+  },
+  {
+    "file_name": "000000374052.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000374052.jpg",
+    "animals": [
+      "bird",
+      "bird",
+      "bird",
+      "bird",
+      "bird",
+      "bird",
+      "bird",
+      "bird",
+      "bird",
+      "bird",
+      "bird",
+      "bird",
+      "bird",
+      "bird"
+    ],
+    "animal_count": 14
+  },
+  {
+    "file_name": "000000077396.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000077396.jpg",
+    "animals": [
+      "cat",
+      "cat"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000461405.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000461405.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 13
+  },
+  {
+    "file_name": "000000548267.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000548267.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 12
+  },
+  {
+    "file_name": "000000364322.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000364322.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "bear",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 17
+  },
+  {
+    "file_name": "000000360325.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000360325.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 7
+  },
+  {
+    "file_name": "000000410428.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000410428.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 10
+  },
+  {
+    "file_name": "000000066561.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000066561.jpg",
+    "animals": [
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000340272.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000340272.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 3
+  },
+  {
+    "file_name": "000000269196.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000269196.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 8
+  },
+  {
+    "file_name": "000000290592.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000290592.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 12
+  },
+  {
+    "file_name": "000000230166.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000230166.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 14
+  },
+  {
+    "file_name": "000000005992.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000005992.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 5
+  },
+  {
+    "file_name": "000000181666.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000181666.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "cow",
+      "cow",
+      "cow",
+      "sheep",
+      "cow"
+    ],
+    "animal_count": 12
+  },
+  {
+    "file_name": "000000198960.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000198960.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 4
+  },
+  {
+    "file_name": "000000474881.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000474881.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 5
+  },
+  {
+    "file_name": "000000012062.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000012062.jpg",
+    "animals": [
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000233567.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000233567.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "cow",
+      "cow"
+    ],
+    "animal_count": 4
+  },
+  {
+    "file_name": "000000459437.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000459437.jpg",
+    "animals": [
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000332901.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000332901.jpg",
+    "animals": [
+      "cow",
+      "dog",
+      "cow"
+    ],
+    "animal_count": 3
+  },
+  {
+    "file_name": "000000103548.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000103548.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 4
+  },
+  {
+    "file_name": "000000094871.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000094871.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "bear",
+      "sheep"
+    ],
+    "animal_count": 4
+  },
+  {
+    "file_name": "000000022589.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000022589.jpg",
+    "animals": [
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000064359.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000064359.jpg",
+    "animals": [
+      "giraffe",
+      "zebra",
+      "zebra",
+      "giraffe",
+      "giraffe",
+      "zebra",
+      "giraffe"
+    ],
+    "animal_count": 7
+  },
+  {
+    "file_name": "000000311295.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000311295.jpg",
+    "animals": [
+      "zebra",
+      "zebra",
+      "zebra",
+      "zebra",
+      "giraffe",
+      "zebra",
+      "zebra"
+    ],
+    "animal_count": 7
+  },
+  {
+    "file_name": "000000433243.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000433243.jpg",
+    "animals": [
+      "zebra",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000159977.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000159977.jpg",
+    "animals": [
+      "giraffe",
+      "zebra"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000486046.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000486046.jpg",
+    "animals": [
+      "giraffe",
+      "zebra"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000287545.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000287545.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000240049.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000240049.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000059386.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000059386.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "zebra"
+    ],
+    "animal_count": 5
+  },
+  {
+    "file_name": "000000566042.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000566042.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 5
+  },
+  {
+    "file_name": "000000165336.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000165336.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000563603.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000563603.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 3
+  },
+  {
+    "file_name": "000000394611.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000394611.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000235252.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000235252.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 3
+  },
+  {
+    "file_name": "000000393282.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000393282.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000062353.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000062353.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 3
+  },
+  {
+    "file_name": "000000296969.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000296969.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 7
+  },
+  {
+    "file_name": "000000349302.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000349302.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000445365.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000445365.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000296317.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000296317.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000420472.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000420472.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000525600.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000525600.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 9
+  },
+  {
+    "file_name": "000000205282.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000205282.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 6
+  },
+  {
+    "file_name": "000000286849.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000286849.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 3
+  },
+  {
+    "file_name": "000000504580.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000504580.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000344059.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000344059.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000507042.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000507042.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000152870.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000152870.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000022969.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000022969.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000460379.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000460379.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 3
+  },
+  {
+    "file_name": "000000150726.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000150726.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000288882.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000288882.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000211069.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000211069.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000221281.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000221281.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 3
+  },
+  {
+    "file_name": "000000577862.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000577862.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000033707.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000033707.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000383676.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000383676.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000112634.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000112634.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000528862.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000528862.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "bird"
+    ],
+    "animal_count": 7
+  },
+  {
+    "file_name": "000000320425.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000320425.jpg",
+    "animals": [
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe",
+      "giraffe"
+    ],
+    "animal_count": 8
+  },
+  {
+    "file_name": "000000193162.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000193162.jpg",
+    "animals": [
+      "cow",
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 3
+  },
+  {
+    "file_name": "000000079229.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000079229.jpg",
+    "animals": [
+      "horse",
+      "dog"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000415990.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000415990.jpg",
+    "animals": [
+      "cow",
+      "cow",
+      "cow",
+      "cow",
+      "cow",
+      "cow",
+      "cow",
+      "cow",
+      "cow",
+      "cow",
+      "cow",
+      "cow"
+    ],
+    "animal_count": 12
+  },
+  {
+    "file_name": "000000241326.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000241326.jpg",
+    "animals": [
+      "cat",
+      "dog"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000189806.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000189806.jpg",
+    "animals": [
+      "cat",
+      "dog"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000288685.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000288685.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep",
+      "dog"
+    ],
+    "animal_count": 4
+  },
+  {
+    "file_name": "000000041888.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000041888.jpg",
+    "animals": [
+      "sheep",
+      "bird",
+      "sheep",
+      "bird"
+    ],
+    "animal_count": 4
+  },
+  {
+    "file_name": "000000277051.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000277051.jpg",
+    "animals": [
+      "bird",
+      "bird"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000419201.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000419201.jpg",
+    "animals": [
+      "sheep",
+      "sheep",
+      "sheep"
+    ],
+    "animal_count": 3
+  },
+  {
+    "file_name": "000000324818.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000324818.jpg",
+    "animals": [
+      "bird",
+      "bird"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000122927.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000122927.jpg",
+    "animals": [
+      "bird",
+      "bird"
+    ],
+    "animal_count": 2
+  },
+  {
+    "file_name": "000000166259.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000166259.jpg",
+    "animals": [
+      "bird",
+      "bird",
+      "bird",
+      "bird"
+    ],
+    "animal_count": 4
+  },
+  {
+    "file_name": "000000285788.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000285788.jpg",
+    "animals": [
+      "giraffe",
+      "bird",
+      "giraffe"
+    ],
+    "animal_count": 3
+  },
+  {
+    "file_name": "000000511076.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000511076.jpg",
+    "animals": [
+      "bird",
+      "bird",
+      "bird",
+      "bird",
+      "bird",
+      "bird",
+      "bird",
+      "bird"
+    ],
+    "animal_count": 8
+  },
+  {
+    "file_name": "000000182441.jpg",
+    "path": "D:\\winynn\\data\\coco_samples\\000000182441.jpg",
+    "animals": [
+      "bird",
+      "bird",
+      "bird",
+      "bird",
+      "bird",
+      "bird",
+      "bird",
+      "bird"
+    ],
+    "animal_count": 8
+  }
+]

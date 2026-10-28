@@ -1,0 +1,40 @@
+version: "3.8"
+
+services:
+  coco-metrology-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: coco-animal-metrology:latest
+    container_name: coco_animal_metrology_app
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_NAME=COCO Animal Segmentation & Visual Metrology API
+      - APP_ENV=production
+      - HOST=0.0.0.0
+      - PORT=8000
+      - DEBUG=false
+      - SECRET_KEY=super-secret-jwt-key-change-in-production-2026
+      - ALGORITHM=HS256
+      - ACCESS_TOKEN_EXPIRE_MINUTES=120
+      - TEST_ADMIN_USERNAME=admin
+      - TEST_ADMIN_PASSWORD=AdminPassword123!
+      - TEST_USER_USERNAME=metrology_tester
+      - TEST_USER_PASSWORD=TesterPassword123!
+      - YOLO_SEG_MODEL=yolov8n-seg.pt
+      - DEFAULT_EYE_METHOD=yolo_pose
+      - YOLO_CONF_THRESHOLD=0.35
+      - YOLO_IOU_THRESHOLD=0.45
+      - DEFAULT_PIXEL_TO_MM_SCALE=0.25
+    volumes:
+      - ./outputs:/app/outputs
+      - ./data:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
